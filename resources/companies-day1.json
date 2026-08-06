@@ -1,0 +1,71 @@
+[
+  {
+    "companyId": "GOOGLE",
+    "displayName": "Google",
+    "sector": "CORE_TECH",
+    "primaryRoomType": "PANEL_6",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",  "roomType": "SEMINAR_HALL", "durationMinutes": 45 },
+      { "roundNumber": 2, "type": "TECH", "roomType": "PANEL_6",      "durationMinutes": 60 },
+      { "roundNumber": 3, "type": "TECH", "roomType": "PANEL_6",      "durationMinutes": 60 },
+      { "roundNumber": 4, "type": "HR",   "roomType": "PANEL_4",      "durationMinutes": 30 }
+    ]
+  },
+  {
+    "companyId": "MICROSOFT",
+    "displayName": "Microsoft",
+    "sector": "CORE_TECH",
+    "primaryRoomType": "PANEL_6",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",  "roomType": "SEMINAR_HALL", "durationMinutes": 45 },
+      { "roundNumber": 2, "type": "GD",   "roomType": "GD_ROOM",      "durationMinutes": 45 },
+      { "roundNumber": 3, "type": "TECH", "roomType": "PANEL_6",      "durationMinutes": 60 },
+      { "roundNumber": 4, "type": "HR",   "roomType": "PANEL_4",      "durationMinutes": 30 }
+    ]
+  },
+  {
+    "companyId": "MCKINSEY",
+    "displayName": "McKinsey",
+    "sector": "CONSULTING",
+    "primaryRoomType": "GD_ROOM",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",  "roomType": "SEMINAR_HALL", "durationMinutes": 60 },
+      { "roundNumber": 2, "type": "GD",   "roomType": "GD_ROOM",      "durationMinutes": 60 },
+      { "roundNumber": 3, "type": "CASE", "roomType": "PANEL_4",      "durationMinutes": 45 },
+      { "roundNumber": 4, "type": "HR",   "roomType": "PANEL_4",      "durationMinutes": 30 }
+    ]
+  },
+  {
+    "companyId": "BCG",
+    "displayName": "BCG",
+    "sector": "CONSULTING",
+    "primaryRoomType": "GD_ROOM",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",  "roomType": "SEMINAR_HALL", "durationMinutes": 60 },
+      { "roundNumber": 2, "type": "GD",   "roomType": "GD_ROOM",      "durationMinutes": 60 },
+      { "roundNumber": 3, "type": "CASE", "roomType": "PANEL_4",      "durationMinutes": 45 }
+    ]
+  },
+  {
+    "companyId": "GOLDMAN",
+    "displayName": "Goldman Sachs",
+    "sector": "FINANCE",
+    "primaryRoomType": "PANEL_4",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",  "roomType": "SEMINAR_HALL", "durationMinutes": 45 },
+      { "roundNumber": 2, "type": "TECH", "roomType": "PANEL_4",      "durationMinutes": 60 },
+      { "roundNumber": 3, "type": "HR",   "roomType": "PANEL_4",      "durationMinutes": 30 }
+    ]
+  },
+  {
+    "companyId": "ONGC",
+    "displayName": "ONGC",
+    "sector": "PSU",
+    "primaryRoomType": "SEMINAR_HALL",
+    "rounds": [
+      { "roundNumber": 1, "type": "PPT",       "roomType": "SEMINAR_HALL", "durationMinutes": 90 },
+      { "roundNumber": 2, "type": "WRITTEN",   "roomType": "SEMINAR_HALL", "durationMinutes": 60 },
+      { "roundNumber": 3, "type": "INTERVIEW", "roomType": "PANEL_4",      "durationMinutes": 30 }
+    ]
+  }
+]

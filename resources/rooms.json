@@ -1,0 +1,25 @@
+[
+  { "roomId": "A-201",    "type": "PANEL_6",      "section": "SECTION_A", "capacity": 6,   "building": "CLT", "floor": 2 },
+  { "roomId": "A-202",    "type": "PANEL_6",      "section": "SECTION_A", "capacity": 6,   "building": "CLT", "floor": 2 },
+  { "roomId": "A-203",    "type": "PANEL_4",      "section": "SECTION_A", "capacity": 4,   "building": "CLT", "floor": 2 },
+  { "roomId": "A-204",    "type": "PANEL_4",      "section": "SECTION_A", "capacity": 4,   "building": "CLT", "floor": 2 },
+  { "roomId": "A-LOUNGE", "type": "LOUNGE",       "section": "SECTION_A", "capacity": 30,  "building": "CLT", "floor": 2 },
+  { "roomId": "A-SEM",    "type": "SEMINAR_HALL", "section": "SECTION_A", "capacity": 80,  "building": "CLT", "floor": 1 },
+
+  { "roomId": "B-101",    "type": "PANEL_4",      "section": "SECTION_B", "capacity": 4,   "building": "CLT", "floor": 1 },
+  { "roomId": "B-102",    "type": "PANEL_4",      "section": "SECTION_B", "capacity": 4,   "building": "CLT", "floor": 1 },
+  { "roomId": "B-GD1",    "type": "GD_ROOM",      "section": "SECTION_B", "capacity": 15,  "building": "CLT", "floor": 1 },
+  { "roomId": "B-GD2",    "type": "GD_ROOM",      "section": "SECTION_B", "capacity": 15,  "building": "CLT", "floor": 1 },
+  { "roomId": "B-LOUNGE", "type": "LOUNGE",       "section": "SECTION_B", "capacity": 25,  "building": "CLT", "floor": 1 },
+
+  { "roomId": "C-301",    "type": "PANEL_4",      "section": "SECTION_C", "capacity": 4,   "building": "IC",  "floor": 3 },
+  { "roomId": "C-302",    "type": "PANEL_4",      "section": "SECTION_C", "capacity": 4,   "building": "IC",  "floor": 3 },
+  { "roomId": "C-SEM",    "type": "SEMINAR_HALL", "section": "SECTION_C", "capacity": 100, "building": "IC",  "floor": 1 },
+  { "roomId": "C-LOUNGE", "type": "LOUNGE",       "section": "SECTION_C", "capacity": 20,  "building": "IC",  "floor": 3 },
+
+  { "roomId": "D-401",    "type": "PANEL_6",      "section": "SECTION_D", "capacity": 6,   "building": "IC",  "floor": 4 },
+  { "roomId": "D-402",    "type": "PANEL_4",      "section": "SECTION_D", "capacity": 4,   "building": "IC",  "floor": 4 },
+  { "roomId": "D-GD1",    "type": "GD_ROOM",      "section": "SECTION_D", "capacity": 15,  "building": "IC",  "floor": 4 },
+  { "roomId": "D-SEM",    "type": "SEMINAR_HALL", "section": "SECTION_D", "capacity": 60,  "building": "IC",  "floor": 4 },
+  { "roomId": "D-LOUNGE", "type": "LOUNGE",       "section": "SECTION_D", "capacity": 20,  "building": "IC",  "floor": 4 }
+]

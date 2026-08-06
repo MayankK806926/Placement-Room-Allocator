@@ -1,0 +1,24 @@
+{
+  "rivalPairs": [
+    {
+      "comment": "Direct FAANG competitors — candidates compare offers on the spot",
+      "companies": ["GOOGLE", "MICROSOFT"]
+    },
+    {
+      "comment": "Top consulting rivals — same case study format, same candidate pool",
+      "companies": ["MCKINSEY", "BCG"]
+    },
+    {
+      "comment": "BCG and Bain share methodology — candidates play them off each other",
+      "companies": ["BCG", "BAIN"]
+    },
+    {
+      "comment": "Goldman and Morgan Stanley both targeting quant finance profiles",
+      "companies": ["GOLDMAN", "MORGAN_STANLEY"]
+    },
+    {
+      "comment": "Amazon and Flipkart compete for the same SDE profiles",
+      "companies": ["AMAZON", "FLIPKART"]
+    }
+  ]
+}
