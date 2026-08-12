@@ -54,7 +54,7 @@ Section SectionRouter::resolveSection(
                 " → looking for alternate section\n",
                 candidate.displayName.c_str());
 
-    // SECTION_D is the designated overflow bucket — try it before anything
+    // SECTION_D is the designated overflow bucket - try it before anything
     // else, but it must be checked for conflicts too: a previous rival may
     // already have been bumped there.
     static constexpr Section fallbackOrder[] = {

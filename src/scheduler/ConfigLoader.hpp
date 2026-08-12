@@ -1,5 +1,5 @@
 #pragma once
-// Minimal JSON parser — no external dependencies (no nlohmann, no rapidjson).
+// Minimal JSON parser - no external dependencies (no nlohmann, no rapidjson).
 // Parses the three config files using simple string scanning.
 // Good enough for structured config files with predictable schema.
 // For production, swap with nlohmann/json or simdjson.

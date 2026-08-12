@@ -42,7 +42,7 @@ add_custom_command(TARGET placement_allocator POST_BUILD
 enable_testing()
 
 # Tests use assert() for correctness checks. The default Release build type
-# defines NDEBUG, which compiles every assert() into a no-op — that would make
+# defines NDEBUG, which compiles every assert() into a no-op - that would make
 # every test "pass" without checking anything. Force asserts on for test
 # binaries regardless of CMAKE_BUILD_TYPE.
 set(TEST_ASSERT_FLAGS -UNDEBUG)

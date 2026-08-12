@@ -6,7 +6,7 @@
 #include <unordered_map>
 
 // Assigns building sections to companies ONCE before the day begins.
-// Section assignments are fixed for the entire day — they do not change
+// Section assignments are fixed for the entire day - they do not change
 // as rooms are allocated and freed through the ring buffer.
 //
 // Rules (in priority order):

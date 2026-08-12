@@ -1,4 +1,4 @@
-# Placement Room Allocator — IIT Madras OCS
+# Placement Room Allocator - IIT Madras OCS
 ### Ring Buffer (Disruptor pattern) in C++17
 
 ---
@@ -10,8 +10,8 @@ PPT → GD → Tech interviews → HR → free again, all day, across multiple c
 
 Two core constraints make this non-trivial:
 
-1. **Rival companies must not share a section** — Google and Microsoft can't be in the same corridor. Candidates compare offers, interviewers cross paths.
-2. **Room type must match the round** — a GD needs a 15-seat room, a PPT needs the seminar hall, a tech interview needs a PANEL_6.
+1. **Rival companies must not share a section** - Google and Microsoft can't be in the same corridor. Candidates compare offers, interviewers cross paths.
+2. **Room type must match the round** - a GD needs a 15-seat room, a PPT needs the seminar hall, a tech interview needs a PANEL_6.
 
 The naive approach (coordinators on WhatsApp, shared Google Sheets) breaks under load and violates constraint 1 accidentally all the time.
 
@@ -35,21 +35,21 @@ Interviewer taps "Round done" in portal
               │
      ┌────────┘
      ▼
-  [SlotAssignmentConsumer]  seqA   BusySpin  — latency critical
+  [SlotAssignmentConsumer]  seqA   BusySpin  - latency critical
       pollNext(section, roomType)
       setRoomAssigned(room, company, round)
       advanceRound + reEnqueue
      │
-     ├──► [StudentNotifierConsumer]  seqB   Yielding  — waits on seqA
+     ├──► [StudentNotifierConsumer]  seqB   Yielding  - waits on seqA
      │        push room+round to student portal
      │
-     ├──► [OcsDashboardConsumer]    seqC   Yielding  — waits on seqA
+     ├──► [OcsDashboardConsumer]    seqC   Yielding  - waits on seqA
      │        update live coordinator room map
      │
-     └──► [AuditLogConsumer]        seqD   Sleeping  — waits on seqA
+     └──► [AuditLogConsumer]        seqD   Sleeping  - waits on seqA
               append to placement_audit.csv
 
-Producer gates on min(seqB, seqC, seqD) — cannot lap slowest consumer.
+Producer gates on min(seqB, seqC, seqD) - cannot lap slowest consumer.
 Zero mutexes in the hot path. One mutex only in CompanyQueue (tiny, cold path).
 ```
 
@@ -148,7 +148,7 @@ cmake --build build-debug
 
 | Decision | Reason |
 |---|---|
-| Ring size = power of 2 | `seq & mask` replaces `seq % size` — no division in hot path |
+| Ring size = power of 2 | `seq & mask` replaces `seq % size` - no division in hot path |
 | All RoomEvents pre-allocated | Zero heap allocation during the placement day |
 | `Sequence` padded to cache line | Prevents false sharing between producer and consumer counters |
 | `memory_order_acquire/release` | Correct happens-before without full `seq_cst` barrier cost |

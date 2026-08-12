@@ -16,7 +16,7 @@
 // counter and re-enqueues it so it can claim its next room.
 //
 // Other consumers (StudentNotifier, OcsDashboard, AuditLog) wait on this
-// consumer's sequence as their upstream barrier — they always see the
+// consumer's sequence as their upstream barrier - they always see the
 // ROOM_ASSIGNED version, never the raw ROOM_FREE.
 
 class SlotAssignmentConsumer {
@@ -65,7 +65,7 @@ public:
                         queue_.advanceRound(next->companyId);
                         queue_.reEnqueue(next);   // back in queue for next round
                     } else {
-                        std::printf("[SlotAssign]  %s — all rounds done, removed from queue\n",
+                        std::printf("[SlotAssign]  %s - all rounds done, removed from queue\n",
                             next->displayName.c_str());
                     }
                 } else {

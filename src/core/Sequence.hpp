@@ -5,7 +5,7 @@
 
 // Cache line size on x86/ARM is typically 64 bytes.
 // If two Sequence objects share a cache line, a write to one invalidates
-// the other in every other core's L1 cache — "false sharing".
+// the other in every other core's L1 cache - "false sharing".
 // Padding ensures each Sequence owns its cache line exclusively.
 constexpr size_t CACHE_LINE_SIZE = 64;
 
@@ -14,7 +14,7 @@ struct alignas(CACHE_LINE_SIZE) Sequence {
 
     explicit Sequence(int64_t initial = -1) : value(initial) {}
 
-    // No copy — sequences are identity objects
+    // No copy - sequences are identity objects
     Sequence(const Sequence&)            = delete;
     Sequence& operator=(const Sequence&) = delete;
 

@@ -5,7 +5,7 @@
 
 // The producer side of the ring buffer.
 // Called by the HTTP handler (or simulation) when an interviewer taps
-// "Round done" in the portal — which frees the room for reallocation.
+// "Round done" in the portal - which frees the room for reallocation.
 //
 // Thread-safety: in the single-producer model used here, only ONE thread
 // should call publishRoomFree() at a time. For multi-producer (multiple
@@ -23,7 +23,7 @@ public:
                             std::chrono::system_clock::now().time_since_epoch()
                          ).count();
         evt.setRoomFree(room, now);
-        ring_.publish(seq);                  // memory barrier — consumers can now see it
+        ring_.publish(seq);                  // memory barrier - consumers can now see it
     }
 
 private:

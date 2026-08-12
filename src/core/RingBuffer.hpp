@@ -5,12 +5,12 @@
 #include <stdexcept>
 #include <algorithm>
 
-// Fixed-size circular buffer — all slots pre-allocated at construction time.
+// Fixed-size circular buffer - all slots pre-allocated at construction time.
 // T must be default-constructible. Producers fill slots via get(seq) before
 // calling publish(seq). Consumers read via get(seq) after they see the cursor
 // advance past their target sequence.
 //
-// Ring size MUST be a power of 2 — enables (seq & indexMask) instead of
+// Ring size MUST be a power of 2 - enables (seq & indexMask) instead of
 // expensive modulo for slot lookup.
 
 template<typename T>

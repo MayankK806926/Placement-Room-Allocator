@@ -26,12 +26,12 @@ static constexpr size_t RING_SIZE = 32;   // must be power of 2
 //  1. Load room inventory     (rooms.json)
 //  2. Load companies + rounds (companies-day1.json + rival-map.json)
 //  3. SectionRouter: assign sections, enforce rival separation
-//  4. Validate — crash early if any rivals share a section
+//  4. Validate - crash early if any rivals share a section
 //  5. Build ring buffer (size 32)
 //  6. Wire consumer dependency chain:
 //
 //       Producer
-//          └─► SlotAssignmentConsumer  [seqA]  (BusySpin — latency critical)
+//          └─► SlotAssignmentConsumer  [seqA]  (BusySpin - latency critical)
 //                   ├─► StudentNotifierConsumer [seqB]  waits on seqA  (Yielding)
 //                   ├─► OcsDashboardConsumer    [seqC]  waits on seqA  (Yielding)
 //                   └─► AuditLogConsumer        [seqD]  waits on seqA  (Sleeping)
@@ -94,7 +94,7 @@ int main(int argc, char* argv[]) {
     }
 
     // ── 5. Build ring buffer ─────────────────────────────────────────────────
-    // Sequences — all start at -1 ("nothing consumed yet")
+    // Sequences - all start at -1 ("nothing consumed yet")
     Sequence seqSlotAssign(-1);
     Sequence seqNotifier(-1);
     Sequence seqDashboard(-1);

@@ -5,14 +5,14 @@
 // Pluggable wait strategy used by consumers while spinning for the next
 // published sequence. Trade-off: latency vs CPU burn.
 //
-//  BusySpinWaitStrategy   — lowest latency, burns 100% of one CPU core
+//  BusySpinWaitStrategy   - lowest latency, burns 100% of one CPU core
 //                           Use for SlotAssignmentConsumer (latency-critical)
 //
-//  YieldingWaitStrategy   — calls std::this_thread::yield() each spin
+//  YieldingWaitStrategy   - calls std::this_thread::yield() each spin
 //                           Gives up the CPU timeslice; ~1-10µs extra latency
 //                           Use for StudentNotifier and OcsDashboard
 //
-//  SleepingWaitStrategy   — sleeps for a fixed duration each spin
+//  SleepingWaitStrategy   - sleeps for a fixed duration each spin
 //                           Lowest CPU use, highest latency (~1ms+)
 //                           Use for AuditLogConsumer (throughput, not latency)
 

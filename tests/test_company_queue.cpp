@@ -106,7 +106,7 @@ static void test_round_advancement() {
     std::printf("[PASS] test_round_advancement\n");
 }
 
-// ── Test 4: Two companies in same section — correct one is returned ──────────
+// ── Test 4: Two companies in same section - correct one is returned ──────────
 static void test_two_companies_correct_match() {
     RoundScheduleRegistry reg;
     // Google needs SEMINAR_HALL for round 1
@@ -129,7 +129,7 @@ static void test_two_companies_correct_match() {
 
     CompanyQueue queue(companies, reg);
 
-    // A GD_ROOM becomes free — should go to Amazon, not Google
+    // A GD_ROOM becomes free - should go to Amazon, not Google
     Company* result = queue.pollNext(Section::SECTION_A, RoomType::GD_ROOM);
     assert(result != nullptr);
     assert(result->companyId == "AMAZON");

@@ -11,7 +11,7 @@
 
 // Base for all downstream consumers that depend on SlotAssignmentConsumer.
 // They spin on upstreamBarrier_ (SlotAssignment's sequence) first, then
-// on the ring cursor. This guarantees they never read a ROOM_FREE slot —
+// on the ring cursor. This guarantees they never read a ROOM_FREE slot -
 // they always see the ROOM_ASSIGNED version that SlotAssignment wrote.
 
 class DownstreamConsumer {
@@ -75,7 +75,7 @@ protected:
 
 // ── OcsDashboardConsumer ─────────────────────────────────────────────────────
 // Updates the live room map that OCS coordinators watch.
-// Slowest consumer — a few seconds of lag is acceptable here.
+// Slowest consumer - a few seconds of lag is acceptable here.
 
 class OcsDashboardConsumer : public DownstreamConsumer {
 public:
@@ -89,7 +89,7 @@ protected:
         std::printf("[Dashboard]    seq=%-4lld  room %-8s  status=OCCUPIED  company=%s\n",
             (long long)seq,
             evt.room->roomId.c_str(),
-            evt.company ? evt.company->displayName.c_str() : "—");
+            evt.company ? evt.company->displayName.c_str() : "-");
     }
 };
 

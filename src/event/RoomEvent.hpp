@@ -6,7 +6,7 @@
 
 // What gets written into each ring buffer slot.
 //
-// Instances are PRE-ALLOCATED in the ring at startup — never heap-allocated
+// Instances are PRE-ALLOCATED in the ring at startup - never heap-allocated
 // during the placement day. The producer fills these fields via setRoomFree()
 // or setRoomAssigned() before calling ring.publish(seq).
 //

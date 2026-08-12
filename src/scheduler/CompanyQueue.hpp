@@ -12,7 +12,7 @@
 // company whose *current* round needs exactly that room type.
 //
 // Uses RoundScheduleRegistry to know what room type each company's current
-// round requires — so the match is round-aware, not just company-level.
+// round requires - so the match is round-aware, not just company-level.
 //
 // The mutex here is intentional and lightweight: accessed from the consumer
 // thread and potentially from a coordinator UI thread. Critical section is
@@ -42,7 +42,7 @@ public:
             int currentRound = roundTracker_[front->companyId];
             RoomType needed  = schedRegistry_.roomTypeFor(front->companyId, currentRound);
             if (needed == neededType) {
-                return front;   // match — don't re-enqueue yet
+                return front;   // match - don't re-enqueue yet
             }
             q.push(front);      // rotate to back
         }

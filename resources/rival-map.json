@@ -1,15 +1,15 @@
 {
   "rivalPairs": [
     {
-      "comment": "Direct FAANG competitors — candidates compare offers on the spot",
+      "comment": "Direct FAANG competitors - candidates compare offers on the spot",
       "companies": ["GOOGLE", "MICROSOFT"]
     },
     {
-      "comment": "Top consulting rivals — same case study format, same candidate pool",
+      "comment": "Top consulting rivals - same case study format, same candidate pool",
       "companies": ["MCKINSEY", "BCG"]
     },
     {
-      "comment": "BCG and Bain share methodology — candidates play them off each other",
+      "comment": "BCG and Bain share methodology - candidates play them off each other",
       "companies": ["BCG", "BAIN"]
     },
     {

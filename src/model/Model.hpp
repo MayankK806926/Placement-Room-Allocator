@@ -21,11 +21,11 @@ enum class Sector {
 
 // The format of a room determines which round type it can host.
 enum class RoomType {
-    SEMINAR_HALL,  // 50-100 seats  — PPT / pre-placement talk
-    GD_ROOM,       // 12-15 seats   — group discussion
-    PANEL_6,       // 6 seats       — technical interview
-    PANEL_4,       // 4 seats       — HR / 1-on-1 tech
-    LOUNGE         // 20-30 seats   — student waiting area
+    SEMINAR_HALL,  // 50-100 seats  - PPT / pre-placement talk
+    GD_ROOM,       // 12-15 seats   - group discussion
+    PANEL_6,       // 6 seats       - technical interview
+    PANEL_4,       // 4 seats       - HR / 1-on-1 tech
+    LOUNGE         // 20-30 seats   - student waiting area
 };
 
 // ── Room ─────────────────────────────────────────────────────────────────────

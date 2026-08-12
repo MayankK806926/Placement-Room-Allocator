@@ -64,7 +64,7 @@ static void test_producer_blocks_when_full() {
         ring.publish(s);
     }
 
-    // Producer should block — release consumer after short delay
+    // Producer should block - release consumer after short delay
     std::atomic<bool> produced(false);
     std::thread producer([&]{
         int64_t s = ring.next();  // should block until consumer moves
